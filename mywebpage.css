@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*div.container{
+    border: 2px solid white;}*/
+body{
+    background-position: center ;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('pic.jpg');
+    background-size: cover;
+    flex-wrap: wrap;
+}
+    
+/*left right photos*/
+/*
+aside{
+    display: flex;
+    
+}
+
+aside img{
+    width: 70%;
+   
+}
+ 
+div.left, div.right{
+    display: inline-block;
+    margin-left: 300px; 
+    border: 4px dotted white;
+}
+div.right{
+    width: 15%;
+}*/
+
+
+/*lead photos*/
+.lead img{ 
+    width:60%;
+    margin-left: 20%;
+    border: 3px solid rgb(7, 7, 7); 
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.artical{
+    color: rgb(239, 238, 238);  
+    position: absolute;
+    width: 12%;
+    top:15%;
+    left: 68%;
+    background-color: rgba(0, 0, 0, 0.782);
+    font-size: small;
+    border: 2px solid rgb(62, 60, 60); 
+    padding: 10px;
+    border-radius: 10px;/*make the border round*/
+    flex-wrap: wrap;   
+
+}
+  
+/*header{
+  background-color: rgba(54, 52, 52, 0.516); 
+
+}
+header img{
+  margin-top: auto;
+  width: 20%;
+ 
+}
+.logo img{
+    width: 10%;
+    height: 10%;
+}
+*/
+
+
+/*setup the navigation bar*/
+.nav{
+    /*background-color: gray;*/
+    display: flex;
+    flex-direction: row;
+       
+}
+.logo{
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    font-family: fantasy;
+    flex: 1; /* 1 unit of available space*/
+    margin: 7px;
+    
+}
+
+
+.nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    display: flex; 
+    flex: 6;
+    
+
+}
+.nav ul li{
+    display: inline-block;
+    width: 90px;
+    border: 2px solid white;
+    height: 40px;
+    line-height: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    margin-left: 100px; 
+    transition: 2s ease;
+    margin-top: 7px;  
+
+}
+.nav ul li a{
+   color: white;
+   text-decoration: none;
+   border: 1px solid black;
+   display: block;
+   
+   
+}
+.nav ul li a:hover{
+    background-color: dimgrey;
+    color: white;
+  
+}
+.active, .nav ul li a:hover{
+    background-color: rgb(91, 88, 88);
+    border-radius: 2px;
+    
+}
+div.content-box{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.content{
+    flex: 2;
+    border-right: 2px solid rgb(103, 98, 98);
+    padding: 1px 120px;
+    color: rgb(223, 221, 221);
+    margin-left: auto;
+    margin-bottom: 10px;
+    line-height: 22px;
+    
+}
+.sidebar{
+    flex: 1;
+    padding: 10px;
+    color: rgb(223, 221, 221);   
+}
+.block{
+    font-size: 1.1em;
+    font-family:'Times New Roman', Times, serif;
+}
+.right img{ /*pic 5.png*/
+    width: 30%;
+    display: flex;
+    position: inherit;
+    border: 3px solid rgb(7, 7, 7); 
+    
+    
+      
+}
+
+/*
+footer{
+    margin-top: 90px;
+    background-color: #121212d6;
+    text-align: center; 
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 180px;
+    height: 80px;
+    color: white;
+    display: inline-block;   
+      
+}*/
+footer{
+    background-color: #121212d6;
+    color: white;
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: 20px;
+    flex-wrap: wrap;
+    
+    text-align: center; 
+    padding: 5px 30px;
+   
+    
+   
+}
+footer a{
+ 
+    margin-inline: 50px 100px; /*create space between tab*/
+    color: white;
+    font-size: medium; 
+}
+.footer-1{
+    text-decoration: none;
+    text-align: center;
+}
+.footer-2{
+    flex-grow: 5;
+    
+}
+.footer-2{
+    text-decoration: none;
+    text-align: center;
+
+
+}
+.footer-copy{
+    color: #e3e6e8; 
+    padding-bottom: 1rem;
+    justify-content: 20px;
+    font-size: small;   
+}
+
+
+
+/****************************
+Media Queries
+*****************************/
+@media screen and (max-width: 600px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav ul{
+        flex-direction: column;
+    }
+    div.content-box{
+        flex-direction: column;
+    }
+}
+
+    
+
+    
+
+
